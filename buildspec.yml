@@ -4,8 +4,7 @@ phases:
   install:
     run-as: Linux-user-name
     runtime-versions:
-     # java: openjdk8
-     java : corretto8
+     java: openjdk8
     commands:
       - echo istall
   pre_build:
