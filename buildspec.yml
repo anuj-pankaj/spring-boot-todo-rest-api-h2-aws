@@ -1,0 +1,22 @@
+version: 0.2
+            
+phases:
+  install:
+    run-as: Linux-user-name
+    runtime-versions:
+      java: openjdk8
+    commands:
+      - echo istall
+  pre_build:
+    commands:
+      - echo pre_build
+  build:
+    commands:
+      - mvn package
+      - echo build
+  post_build:
+    commands:
+      - echo_postbuild
+artifacts:
+  files:
+    - target/spring-boot-todo-rest-api-h2-aws-0.0.2-SNAPSHOT.jar
