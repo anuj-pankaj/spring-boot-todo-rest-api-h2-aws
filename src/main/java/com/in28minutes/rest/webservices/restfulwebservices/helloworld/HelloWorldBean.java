@@ -3,6 +3,8 @@ package com.in28minutes.rest.webservices.restfulwebservices.helloworld;
 public class HelloWorldBean {
 
 	private String message;
+	
+	private String whoAreYou;
 
 	public HelloWorldBean(String message) {
 		this.message = message;
